@@ -107,9 +107,44 @@ function App() {
             invite you to be part of the beginning
             <br className="desktop-break" /> of their forever.
           </p>
-          <div className="hero-date">
-            <CalendarDays size={17} strokeWidth={1.6} /> WEDNESDAY, 2 DECEMBER
-            2026
+          <div className="hero-events">
+            <div>
+              <span>
+                <Heart size={12} /> WEDDING
+              </span>
+              <strong>Wed, 2 Dec 2026</strong>
+            </div>
+            <div>
+              <span>
+                <Sparkles size={12} /> RECEPTION
+              </span>
+              <strong>Fri, 4 Dec 2026</strong>
+              <small>7:00 PM onwards</small>
+            </div>
+          </div>
+          <div className="hero-venue">
+            <div className="hero-venue-name">
+              <MapPin size={18} />
+              <div>
+                <span>VENUE</span>
+                <strong>Nilamani Convention</strong>
+                <small>Khordha, Odisha</small>
+              </div>
+            </div>
+            <iframe
+              className="hero-map"
+              title="Map to Nilamani Convention, Khordha"
+              src="https://maps.google.com/maps?q=Nilamani%20Convention%20Khordha%20Odisha&z=15&output=embed"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <a
+              className="hero-directions"
+              href={mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Navigation size={15} /> GET DIRECTIONS
+            </a>
           </div>
           <a
             href="#celebration"

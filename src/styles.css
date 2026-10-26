@@ -17,3 +17,27 @@
 .between-heart{width:62px;height:62px;margin:auto;border-radius:50%;justify-content:center;background:#fffaf4;border:1px solid #d7b47a;box-shadow:0 8px 20px #4d2c2914;gap:2px}
 .between-heart svg{fill:#c9727f33}
 @media(max-width:700px){.couple-grid{grid-template-columns:1fr;gap:20px;max-width:340px}.person-art{height:265px}.person-art .intro-figure{height:215px}.between-heart{flex-direction:column;width:58px;height:58px}}
+/* Hero venue + map */
+.hero{min-height:auto}
+.hero-content{padding-bottom:110px}
+.hero-subtitle{margin:18px 0 22px}
+.hero-venue{width:min(440px,100%);margin:26px auto 0;padding:14px;background:#ffffff0d;border:1px solid #d7b47a55;border-radius:20px;backdrop-filter:blur(4px)}
+.hero-venue-name{display:flex;align-items:center;gap:12px;text-align:left;padding:2px 4px 12px;color:#e3c58e}
+.hero-venue-name div{display:flex;flex-direction:column;gap:2px}
+.hero-venue-name span{font-size:8px;letter-spacing:2.5px;color:#c9a66b}
+.hero-venue-name strong{font-family:"Playfair Display",serif;font-weight:500;font-size:20px;color:#fff8ee}
+.hero-venue-name small{font-size:11px;color:#e6cba1}
+.hero-map{display:block;width:100%;height:190px;border:0;border-radius:12px;background:#3a1420}
+.hero-directions{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding:13px;border-radius:12px;background:#d6b579;color:#421a26;font-size:10px;font-weight:700;letter-spacing:1.6px;transition:background .2s}
+.hero-directions:hover{background:#ead3a6}
+@media(max-width:700px){.hero-content{padding:44px 16px 84px}.hero-subtitle{margin:14px 0 18px}.hero-venue{margin-top:20px;padding:12px}.hero-map{height:165px}.hero-stamp{display:none}}
+.hero-events{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.hero-events>div{display:flex;flex-direction:column;gap:4px;padding:11px 10px;border:1px solid #d7b47a55;border-radius:12px;background:#ffffff0a}
+.hero-events span{display:inline-flex;align-items:center;justify-content:center;gap:5px;font-size:8px;font-weight:700;letter-spacing:2px;color:#d7b47a}
+.hero-events strong{font-family:"Playfair Display",serif;font-weight:500;font-size:16px;color:#fff8ee}
+.hero-events small{font-size:10px;color:#e6cba1}
+.hero-venue-name{padding-bottom:12px}
+.hero-events{width:min(440px,100%);margin:24px auto 0}
+.hero-events>div{background:#ffffff0d;backdrop-filter:blur(4px)}
+.hero-venue{margin-top:12px}
+@media(max-width:700px){.hero-events{margin-top:18px}}
