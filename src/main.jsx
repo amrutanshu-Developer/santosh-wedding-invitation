@@ -11,7 +11,7 @@ import {
   Share2,
   ChevronDown,
 } from "lucide-react";
-import Intro, { Groom, Bride, Toran } from "./Intro.jsx";
+import { Groom, Bride, Toran } from "./Intro.jsx";
 import { startScrollVars, startTapBursts, petalShower } from "./effects.js";
 import "./styles.css";
 
@@ -104,7 +104,6 @@ function Sparkle({ style }) {
 
 function App() {
   const countdown = useCountdown();
-  const [introDone, setIntroDone] = useState(false);
   const [dockVisible, setDockVisible] = useState(false);
   const heroActionsRef = useRef(null);
 
@@ -133,16 +132,15 @@ function App() {
   useEffect(() => {
     const stopScroll = startScrollVars();
     const stopTaps = startTapBursts();
+    // Welcome guests with a petal shower as soon as the page opens
+    const showerTimer = setTimeout(() => petalShower(), 400);
     return () => {
       stopScroll();
       stopTaps();
+      clearTimeout(showerTimer);
     };
   }, []);
 
-  const openInvitation = () => {
-    setIntroDone(true);
-    petalShower();
-  };
 
   // Fade sections in as they scroll into view
   useEffect(() => {
@@ -175,10 +173,9 @@ function App() {
   return (
     <main>
       <div className="progress" aria-hidden="true" />
-      {!introDone && <Intro onOpen={openInvitation} />}
 
       {/* ───────────── HERO: names, venue, map ───────────── */}
-      <section className={`hero${introDone ? " play" : ""}`} id="home">
+      <section className="hero play" id="home">
         <div className="hero-glow" aria-hidden="true" />
         <Mandala className="hero-mandala" />
         <div className="hero-sparkles" aria-hidden="true">
@@ -499,7 +496,7 @@ function App() {
       </footer>
 
       {/* ───────────── FLOATING DOCK ───────────── */}
-      <nav className={`dock${dockVisible && introDone ? " show" : ""}`} aria-label="Quick actions">
+      <nav className={`dock${dockVisible ? " show" : ""}`} aria-label="Quick actions">
         <a className="dock-main" href={mapsUrl} {...external}>
           <Navigation size={16} /> Directions
         </a>
