@@ -12,6 +12,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Intro, { Groom, Bride, Toran } from "./Intro.jsx";
+import { startScrollVars, startTapBursts, petalShower } from "./effects.js";
 import "./styles.css";
 
 const weddingDate = new Date("2026-12-02T09:00:00+05:30");
@@ -120,9 +121,23 @@ function App() {
     [],
   );
 
+  useEffect(() => {
+    const stopScroll = startScrollVars();
+    const stopTaps = startTapBursts();
+    return () => {
+      stopScroll();
+      stopTaps();
+    };
+  }, []);
+
+  const openInvitation = () => {
+    setIntroDone(true);
+    petalShower();
+  };
+
   // Fade sections in as they scroll into view
   useEffect(() => {
-    const nodes = document.querySelectorAll(".reveal");
+    const nodes = document.querySelectorAll(".reveal, .draw");
     const observer = new IntersectionObserver(
       (entries) =>
         entries.forEach((entry) => {
@@ -150,7 +165,8 @@ function App() {
 
   return (
     <main>
-      {!introDone && <Intro onOpen={() => setIntroDone(true)} />}
+      <div className="progress" aria-hidden="true" />
+      {!introDone && <Intro onOpen={openInvitation} />}
 
       {/* ───────────── HERO: names, venue, map ───────────── */}
       <section className={`hero${introDone ? " play" : ""}`} id="home">
@@ -218,6 +234,7 @@ function App() {
           </div>
 
           <div className="venue-card stagger" style={{ "--d": 5 }}>
+            <span className="venue-card-shine" aria-hidden="true" />
             <div className="venue-card-head">
               <span className="pin-pulse">
                 <MapPin size={20} fill="currentColor" />
@@ -338,7 +355,7 @@ function App() {
         <div className="countdown" aria-label="Countdown to the wedding">
           {Object.entries(countdown).map(([label, value]) => (
             <div className="count" key={label}>
-              <strong>{String(value).padStart(2, "0")}</strong>
+              <strong key={value}>{String(value).padStart(2, "0")}</strong>
               <span>{label}</span>
             </div>
           ))}
@@ -353,7 +370,7 @@ function App() {
             Save the <em>dates</em>
           </h2>
         </div>
-        <ol className="timeline">
+        <ol className="timeline draw">
           <li className="event reveal">
             <div className="event-date">
               <span>Dec</span>

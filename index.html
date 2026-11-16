@@ -1,40 +1,111 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#2a0c14" />
+
+    <!-- ───── Search (Google) ───── -->
+    <title>Santosh Wedding · Santosh &amp; Diptimayee Wedding Invitation · December 2026, Khordha</title>
     <meta
       name="description"
-      content="A joyful invitation to celebrate the wedding of Santosh and Diptimayee."
+      content="Santosh weds Diptimayee — wedding invitation of Santosh &amp; Diptimayee (Minu). Wedding on Wednesday 2 December 2026 and reception on Friday 4 December 2026, 7 PM at Nilamani Convention, Khordha, Odisha. Venue map, directions and event details."
     />
-    <title>Santosh & Diptimayee — Wedding Invitation</title>
-
-    <!-- Link preview (WhatsApp, Facebook, Telegram, etc.). Set VITE_SITE_URL in .env so the image URL is absolute. -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Santosh & Diptimayee Wedding" />
     <meta
-      property="og:title"
-      content="Santosh & Diptimayee — Wedding Invitation · 4 Dec 2026"
+      name="keywords"
+      content="Santosh wedding, Santosh Diptimayee wedding, Santosh weds Diptimayee, Santosh and Diptimayee, Santosh Sahoo wedding, Diptimayee wedding, Santosh Chintu wedding, Santosh wedding invitation, Nilamani Convention Khordha, Khordha wedding December 2026, Odisha wedding invitation"
     />
+    <meta name="author" content="Santosh &amp; Diptimayee" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="geo.region" content="IN-OR" />
+    <meta name="geo.placename" content="Khordha, Odisha" />
+
+    <!-- ───── Link preview (WhatsApp, Facebook, Telegram, X) ───── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Santosh &amp; Diptimayee Wedding" />
+    <meta property="og:title" content="Santosh &amp; Diptimayee — Wedding Invitation · 4 Dec 2026" />
     <meta
       property="og:description"
       content="Friday, 4 December 2026 · Nilamani Convention, Khordha, Odisha. Location: https://maps.app.goo.gl/wipme7kBL4Uas3Cv8"
     />
     <meta property="og:url" content="%VITE_SITE_URL%/" />
     <meta property="og:image" content="%VITE_SITE_URL%/og-image.jpg" />
-    <meta
-      property="og:image:secure_url"
-      content="%VITE_SITE_URL%/og-image.jpg"
-    />
+    <meta property="og:image:secure_url" content="%VITE_SITE_URL%/og-image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Santosh & Diptimayee — Wedding, Friday 4 December 2026, Nilamani Convention, Khordha"
+      content="Santosh &amp; Diptimayee — Wedding, Friday 4 December 2026, Nilamani Convention, Khordha"
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Santosh &amp; Diptimayee — Wedding Invitation · 4 Dec 2026" />
+    <meta name="twitter:description" content="Friday, 4 December 2026 · Nilamani Convention, Khordha, Odisha." />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.jpg" />
+
+    <!-- ───── Structured data: lets Google understand the events, dates and venue ───── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "%VITE_SITE_URL%/#website",
+            "url": "%VITE_SITE_URL%/",
+            "name": "Santosh & Diptimayee Wedding",
+            "alternateName": ["Santosh Wedding", "Santosh weds Diptimayee", "Santosh Diptimayee Wedding Invitation"],
+            "inLanguage": "en-IN"
+          },
+          {
+            "@type": "Place",
+            "@id": "%VITE_SITE_URL%/#venue",
+            "name": "Nilamani Convention",
+            "hasMap": "https://maps.app.goo.gl/wipme7kBL4Uas3Cv8",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Khordha",
+              "addressRegion": "Odisha",
+              "addressCountry": "IN"
+            }
+          },
+          {
+            "@type": "Event",
+            "name": "Santosh & Diptimayee Wedding Ceremony",
+            "description": "The wedding ceremony of Santosh (Chintu) and Diptimayee (Minu).",
+            "startDate": "2026-12-02",
+            "endDate": "2026-12-02",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": { "@type": "Place", "name": "Khordha, Odisha", "address": { "@type": "PostalAddress", "addressLocality": "Khordha", "addressRegion": "Odisha", "addressCountry": "IN" } },
+            "image": ["%VITE_SITE_URL%/og-image.jpg"],
+            "url": "%VITE_SITE_URL%/",
+            "organizer": { "@type": "Person", "name": "Santosh", "url": "%VITE_SITE_URL%/" },
+            "performer": [{ "@type": "Person", "name": "Santosh" }, { "@type": "Person", "name": "Diptimayee" }],
+            "isAccessibleForFree": true
+          },
+          {
+            "@type": "Event",
+            "name": "Santosh & Diptimayee Wedding Reception",
+            "description": "Reception and dinner celebrating the wedding of Santosh and Diptimayee at Nilamani Convention, Khordha.",
+            "startDate": "2026-12-04T19:00:00+05:30",
+            "endDate": "2026-12-04T23:00:00+05:30",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": { "@id": "%VITE_SITE_URL%/#venue" },
+            "image": ["%VITE_SITE_URL%/og-image.jpg"],
+            "url": "%VITE_SITE_URL%/",
+            "organizer": { "@type": "Person", "name": "Santosh", "url": "%VITE_SITE_URL%/" },
+            "performer": [{ "@type": "Person", "name": "Santosh" }, { "@type": "Person", "name": "Diptimayee" }],
+            "isAccessibleForFree": true
+          }
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,7 +114,27 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Readable content for search engines and for the moment before the app loads.
+         React replaces everything inside #root once it starts. -->
+    <div id="root">
+      <article
+        style="min-height:100vh;margin:0;padding:80px 20px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#2a0c14;color:#f8e6b4;font-family:Georgia,serif"
+      >
+        <p style="letter-spacing:4px;font-size:12px;text-transform:uppercase;color:#d9b46a">Wedding Invitation</p>
+        <h1 style="font-weight:500;font-size:44px;margin:8px 0">Santosh &amp; Diptimayee</h1>
+        <p style="font-style:italic;color:#ead6c4">Santosh (Chintu) weds Diptimayee (Minu)</p>
+        <p>Wedding: Wednesday, 2 December 2026</p>
+        <p>Reception: Friday, 4 December 2026, 7:00 PM onwards</p>
+        <p>
+          Venue: Nilamani Convention, Khordha, Odisha —
+          <a style="color:#f8e6b4" href="https://maps.app.goo.gl/wipme7kBL4Uas3Cv8">Get directions</a>
+        </p>
+        <p style="color:#ead6c4">
+          Together with their families — Prasanna Kumar Sahoo &amp; Pratima Sahoo, and Kabindra Sahoo &amp; Sabitri Sahoo —
+          Santosh of Paltanpada, Khordha and Diptimayee of Niabasti, Gopinathpur, Badamba, Cuttack invite you to their wedding.
+        </p>
+      </article>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

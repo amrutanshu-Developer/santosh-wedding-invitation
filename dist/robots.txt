@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://santosh-wedding-invitation.vercel.app/sitemap.xml
