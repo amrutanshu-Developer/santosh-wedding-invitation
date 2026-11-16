@@ -41,7 +41,7 @@ const shareUrl = `https://wa.me/?text=${encodeURIComponent(shareMessage)}`;
 
 const wishesMessage =
   "Congratulations! 🙏\n\n" +
-  "Heartiest congratulations to Santosh & Diptimayee on their wedding. " +
+  "Heartiest congratulations to Santosh & Diptimayee on Your wedding. " +
   "Thank you so much for the warm invitation, it truly means a lot.\n\n" +
   "May Lord Jagannath bless you both with a lifetime of love, understanding and happiness. " +
   "Wishing you a beautiful journey together, filled with laughter, good health and many cherished memories.\n\n" +
