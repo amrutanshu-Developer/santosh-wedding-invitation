@@ -197,7 +197,10 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   font-weight: 400;
   font-size: clamp(66px, 19vw, 132px);
   line-height: 1.08;
-  padding: 0 .12em;
+  /* Room above/below so tall script strokes (the S swash) stay inside the
+     gold background that paints the text; negative margins keep the layout. */
+  padding: .3em .14em .12em;
+  margin: -.3em 0 -.12em;
 }
 .amp {
   position: relative;
@@ -599,7 +602,7 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
 .closing h2 em { color: var(--gold); }
 .closing-mandala { position: absolute; left: 50%; bottom: -260px; width: 560px; height: 560px; transform: translateX(-50%); color: var(--gold); opacity: .12; animation: spin 180s linear infinite; }
 .closing-sign { position: relative; margin: 22px 0 30px; font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.6; color: #ead6c4; }
-.closing-sign .script { display: inline-block; margin: 6px 0 2px; font-family: var(--script); font-style: normal; font-size: 44px; line-height: 1.2; padding: 0 .1em; }
+.closing-sign .script { display: inline-block; margin: calc(6px - .3em) 0 calc(2px - .12em); font-family: var(--script); font-style: normal; font-size: 44px; line-height: 1.2; padding: .3em .14em .12em; }
 .closing-actions { position: relative; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; padding: 20px 16px 96px; background: #16060b; color: #b8975e; font-size: 12px; letter-spacing: .5px; text-align: center; }
 
