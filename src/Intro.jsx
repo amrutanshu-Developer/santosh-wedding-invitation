@@ -74,10 +74,10 @@ export function Bride() {
   );
 }
 
-function Toran() {
+export function Toran({ className = "intro-toran" }) {
   const swags = Array.from({ length: 12 }, (_, i) => i * 60);
   return (
-    <svg className="intro-toran" viewBox="0 0 720 54" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+    <svg className={className} viewBox="0 0 720 54" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
       <path d="M0 3 H720" stroke="#d6b579" strokeWidth="2" />
       {swags.map((x) => (
         <g key={x}>

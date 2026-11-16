@@ -43,7 +43,7 @@
 }
 
 .intro-blessing {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-style: italic;
   color: #e3c58e;
   font-size: 15px;
@@ -75,8 +75,8 @@
 .bride-in .intro-walk { animation: walk 0.5s ease-in-out 2s 6, breathe 3s ease-in-out 5s infinite; }
 
 .intro-caption { margin: 4px 0 0; display: flex; flex-direction: column; gap: 2px; padding: 0 6px; }
-.intro-caption em { font-family: "Playfair Display", serif; font-size: 11px; white-space: nowrap; color: #e8d4c5; }
-.intro-caption strong { font-family: "Playfair Display", serif; font-weight: 500; font-size: 19px; color: #e8c78d; }
+.intro-caption em { font-family: "Cormorant Garamond", serif; font-size: 11px; white-space: nowrap; color: #e8d4c5; }
+.intro-caption strong { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 19px; color: #e8c78d; }
 
 .varmala { opacity: 0; animation: fade-in 0.8s ease 5.2s forwards; }
 
@@ -91,7 +91,7 @@
   animation-delay: calc(5.2s + var(--i) * 0.45s);
 }
 
-.intro-message { margin-top: 14px; font-family: "Playfair Display", serif; animation: fade-up 1s ease 5.8s both; }
+.intro-message { margin-top: 14px; font-family: "Cormorant Garamond", serif; animation: fade-up 1s ease 5.8s both; }
 .intro-message p { margin: 0; font-size: clamp(14px, 3.9vw, 17px); line-height: 1.6; color: #f1e2d5; }
 .intro-message strong { color: #e8c78d; font-weight: 600; }
 .intro-message .intro-folded { font-size: 22px; margin-bottom: 2px; }
