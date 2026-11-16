@@ -17,8 +17,17 @@ import "./styles.css";
 
 const weddingDate = new Date("2026-12-02T09:00:00+05:30");
 const mapsUrl = "https://maps.app.goo.gl/wipme7kBL4Uas3Cv8";
+// Pinned to the exact Google Maps place from mapsUrl (place id + coordinates),
+// so the map shows a single "Nilamani convention" instead of every search match.
+const venueLat = 20.1880696;
+const venueLng = 85.6182525;
+const venuePlaceId = "0x3a19ab0020c99457:0xf00571efe23ebc3";
 const mapEmbedUrl =
-  "https://maps.google.com/maps?q=Nilamani%20Convention%20Khordha%20Odisha&z=15&output=embed";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1200" +
+  `!2d${venueLng}!3d${venueLat}` +
+  "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2" +
+  `!1s${encodeURIComponent(venuePlaceId)}!2sNilamani%20convention` +
+  "!5e0!3m2!1sen!2sin!4v1763300000000!5m2!1sen!2sin";
 const siteUrl = "https://santosh-wedding-invitation.vercel.app";
 const whatsappNumber = "919853487141"; // country code + number, used for "Send your wishes"
 
