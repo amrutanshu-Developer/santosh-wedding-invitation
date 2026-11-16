@@ -166,7 +166,7 @@ export default function Intro({ onOpen }) {
           </div>
           <p className="intro-caption">
             <em>Here comes the bride</em>
-            <strong>Dipti Mayee</strong>
+            <strong>Diptimayee</strong>
           </p>
         </div>
       </div>

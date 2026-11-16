@@ -1,4 +1,4 @@
-# 💐 Santosh & Dipti Mayee — Wedding Invitation
+# 💐 Santosh & Diptimayee — Wedding Invitation
 
 A mobile-first digital wedding invitation built with **React** and **Vite**. Guests open one link on their phone and get the couple, the dates, a countdown, the venue on Google Maps, and buttons to send wishes or share the invitation on WhatsApp.
 
@@ -12,8 +12,8 @@ A mobile-first digital wedding invitation built with **React** and **Vite**. Gue
 - **Event timeline:** Mangalakrutyā (1 Dec), the Wedding (2 Dec) and the Reception (4 Dec).
 - **Venue directions:** a Location button stays at the top of the screen, and Google Maps links sit in the venue section and on the Reception card.
 - **WhatsApp:**
-  - *Send your wishes* opens a chat with the family, with a ready-written wish.
-  - *Share invitation* sends the date, venue, a Google Maps link and the invitation link.
+  - _Send your wishes_ opens a chat with the family, with a ready-written wish.
+  - _Share invitation_ sends the date, venue, a Google Maps link and the invitation link.
 - **Link preview:** a preview card (title, date, venue, image) appears when the link is pasted into WhatsApp, Facebook or Telegram.
 - **Accessibility:** responsive layout, scroll-reveal animations, and support for the phone's "reduce motion" setting.
 
@@ -28,25 +28,25 @@ npm run dev
 
 Then open the URL that Vite prints. To open the site on a phone on the same Wi-Fi, use the **Network** address (e.g. `http://192.168.x.x:5173`).
 
-| Command           | What it does                              |
-| ----------------- | ----------------------------------------- |
-| `npm run dev`     | Start the development server              |
-| `npm run build`   | Build the production site into `dist/`    |
-| `npm run preview` | Serve the production build locally        |
+| Command           | What it does                           |
+| ----------------- | -------------------------------------- |
+| `npm run dev`     | Start the development server           |
+| `npm run build`   | Build the production site into `dist/` |
+| `npm run preview` | Serve the production build locally     |
 
 ## 🛠️ Customising
 
-| What                               | Where                                                       |
-| ---------------------------------- | ----------------------------------------------------------- |
-| Names, families, events, venue     | `src/main.jsx`                                              |
-| Wedding date for the countdown     | `weddingDate` in `src/main.jsx`                             |
-| Google Maps link                   | `mapsUrl` in `src/main.jsx`                                 |
-| WhatsApp number for wishes         | `whatsappNumber` in `src/main.jsx` (country code, digits only) |
-| Wish and share message text        | `rsvpText` / `shareUrl` in `src/main.jsx`                   |
-| Opening animation and illustrations | `src/Intro.jsx`, `src/intro.css`                           |
-| Colours, layout, page animations   | `src/styles.css`                                            |
-| Link-preview title and description | `og:*` meta tags in `index.html`                            |
-| Link-preview image (1200×630)      | `public/og-image.jpg`                                       |
+| What                                | Where                                                          |
+| ----------------------------------- | -------------------------------------------------------------- |
+| Names, families, events, venue      | `src/main.jsx`                                                 |
+| Wedding date for the countdown      | `weddingDate` in `src/main.jsx`                                |
+| Google Maps link                    | `mapsUrl` in `src/main.jsx`                                    |
+| WhatsApp number for wishes          | `whatsappNumber` in `src/main.jsx` (country code, digits only) |
+| Wish and share message text         | `rsvpText` / `shareUrl` in `src/main.jsx`                      |
+| Opening animation and illustrations | `src/Intro.jsx`, `src/intro.css`                               |
+| Colours, layout, page animations    | `src/styles.css`                                               |
+| Link-preview title and description  | `og:*` meta tags in `index.html`                               |
+| Link-preview image (1200×630)       | `public/og-image.jpg`                                          |
 
 ## 🌐 Deploying
 
@@ -59,7 +59,6 @@ Then open the URL that Vite prints. To open the site on a phone on the same Wi-F
    WhatsApp only shows the preview image when its URL is absolute, and this value is used to build it.
 
 2. Build and deploy the `dist/` folder to any static host, for example [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/), or GitHub Pages.
-
    - **Netlify / Vercel:** import the repo, set the build command to `npm run build` and the output directory to `dist`, and add `VITE_SITE_URL` as an environment variable.
 
 3. **Test the preview:** paste the link into WhatsApp. WhatsApp keeps old previews, so to see changes, add a query string such as `?v=2`.
@@ -99,4 +98,4 @@ Use your free static ngrok domain (`ngrok http --url=your-name.ngrok-free.app 51
 
 ---
 
-<p align="center">Made with ♥ for Santosh & Dipti Mayee · 2 December 2026</p>
+<p align="center">Made with ♥ for Santosh & Diptimayee · 2 December 2026</p>

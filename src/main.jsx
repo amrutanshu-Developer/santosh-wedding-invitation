@@ -58,7 +58,7 @@ function App() {
 
   const rsvpText = encodeURIComponent(
     "Congratulation! 🙏\n\n" +
-      "Heartiest congratulations to Santosh & Dipti Mayee on their wedding. " +
+      "Heartiest congratulations to Santosh & Diptimayee on their wedding. " +
       "Thank you so much for the warm invitation, it truly means a lot.\n\n" +
       "May Lord Jagannath bless you both with a lifetime of love, understanding and happiness. " +
       "Wishing you a beautiful journey together, filled with laughter, good health and many cherished memories.\n\n" +
@@ -68,7 +68,7 @@ function App() {
     ? `https://wa.me/${whatsappNumber}?text=${rsvpText}`
     : `https://wa.me/?text=${rsvpText}`;
   const shareUrl = `https://wa.me/?text=${encodeURIComponent(
-    `💐 You're invited to the wedding of Santosh & Dipti Mayee\n\n` +
+    `💐 You're invited to the wedding of Santosh & Diptimayee\n\n` +
       `📅 Wednesday, 2 December 2026\n` +
       `📍 Nilamani Convention, Khordha, Odisha\n` +
       `🗺️ Location: ${mapsUrl}\n\n` +
@@ -101,7 +101,7 @@ function App() {
           <h1>
             Santosh <em>&</em>
             <br />
-            Dipti Mayee
+            Diptimayee
           </h1>
           <p className="hero-subtitle">
             invite you to be part of the beginning
@@ -226,7 +226,7 @@ function App() {
             <div className="person-info">
               <span className="person-role">BRIDE</span>
               <h3>
-                Dipti Mayee <em>(Minu)</em>
+                Diptimayee <em>(Minu)</em>
               </h3>
               <p>Daughter of Sabitri Sahoo & Kabindra Sahoo</p>
               <span className="fine-line" />
@@ -397,7 +397,7 @@ function App() {
         </h2>
         <p>
           With love, blessings, and heartfelt gratitude —<br />
-          Santosh, Dipti Mayee & both families
+          Santosh, Diptimayee & both families
         </p>
         <a
           className="rsvp-button"
@@ -420,7 +420,7 @@ function App() {
       <footer>
         <span>MADE WITH LOVE</span>
         <span className="footer-heart">♥</span>
-        <span>SANTOSH & DIPTI MAYEE</span>
+        <span>SANTOSH & Diptimayee</span>
       </footer>
     </main>
   );
